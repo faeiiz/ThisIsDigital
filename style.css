@@ -1,0 +1,138 @@
+@font-face {
+  font-family: cooper;
+  src: url(./CooperLightBT.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "GLADIATOR SPORT", sans-serif; */
+  /* font-family: "Source Sans Pro", sans-serif; */
+  font-family: cooper;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+#nav {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding: 0 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav > h1 {
+  font-size: 30px;
+  font-weight: 100;
+}
+#nav #nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav #nav-part2 > a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #000;
+}
+#nav #nav-part2 > a:nth-last-child(1) {
+  padding: 10px 20px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav #nav-part2 > a:nth-last-child(1) h5 {
+  font-weight: 100;
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+  transition: all linear 0.7s;
+}
+#nav #nav-part2 > a:nth-last-child(1) #green {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  transition: all linear 0.5s;
+}
+#nav #nav-part2 > a:nth-last-child(1):hover h5 {
+  color: #fff;
+}
+#nav #nav-part2 > a:nth-last-child(1):hover #green {
+  left: 0;
+}
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main > h1 {
+  width: 60%;
+  text-align: center;
+  font-size: 6vw;
+  font-weight: 100;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+}
+#main > h1::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 16px;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+  background-size: cover;
+}
+#main #img1 {
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+#main #img2 {
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  position: absolute;
+  top: 18%;
+  right: 10%;
+}
+#main #img3 {
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 8%;
+  right: 27%;
+}
+
+#main img {
+  transition: margin-top ease 0.5s;
+}
+#main img:hover {
+  margin-top: -40px;
+}
